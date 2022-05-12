@@ -1,0 +1,31 @@
+<html>
+    <head></head>
+    <style>
+        .myStyleRed{
+            background-color: red;
+            padding: 16px;
+        }
+    </style>
+    <style>
+        .myStyleWHite{
+            background-color: white;
+            padding: 16px;
+        }
+    </style>
+    <body>
+        <h1>Hello World!</h1>
+        <button type="button" onclick="myFunction(myStyleRed)" id="b1">Change to Red</button><br>
+        <button type="button" onclick="myFunction(myStyleWhite)" id="b2">Change to White</button>
+        <script>
+            function myFunction(clicked){
+                if(clicked=="myStyleRed"){
+                    document.body.classList.remove("myStyleWhite");
+                    document.body.classList.add("myStyleRed")
+                }
+                if(clicked=="myStyleWhite"){
+                    document.body.classList.remove("myStyleRed");
+                    document.body.classList.add("myStyleWhite")
+            }
+        </script>
+    </body>
+</html>
